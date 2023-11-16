@@ -11,6 +11,8 @@ public class Main {
         Point pointOne = new Point(6,5);
         Point pointTwo = new Point(3,1);
         Point pointThree = new Point(0,0);
+        Point pointFour = new Point(0,0);
+
 
         System.out.println("<------------------->");
         System.out.println("<--Defaults-->");
@@ -21,13 +23,15 @@ public class Main {
         System.out.println("<------------------->");
         System.out.println("<--Custom-->");
 
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Give a number : ");
-//        int xSetter = scanner.nextInt();
-//        System.out.println("Give another number : ");
-//        int ySetter = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give a number : ");
+        int xSetter = scanner.nextInt();
+        System.out.println("Give another number : ");
+        int ySetter = scanner.nextInt();
+        pointFour.setX(xSetter);
+        pointFour.setY(ySetter);
 
-//      System.out.println("distance for user : " + pointThree.distance(pointThree.setX(xSetter), pointThree.setY(ySetter)));
+      System.out.println("distance for user : " + pointThree.distance(pointFour.getX(), pointFour.getY() ));
 
 //        PLAYER
 
